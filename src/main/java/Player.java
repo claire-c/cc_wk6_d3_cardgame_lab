@@ -13,4 +13,12 @@ public class Player {
     public String getName() {
         return name;
     }
+
+    public int countHand(){
+        return hand.size();
+    }
+
+    public ArrayList<Card> getHand() {
+        return hand;
+    }
 }

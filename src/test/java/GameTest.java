@@ -40,5 +40,12 @@ public class GameTest {
 
     }
 
+    @Test
+    public void playerHasCardThatDealt(){
+        game.createDeck();
+        game.dealCard(player1);
+        assertEquals(1, player1.countHand());
+    }
+
 
 }

@@ -28,4 +28,12 @@ public class Game {
         deck.populateDeck();
         Collections.shuffle(deck.cards);
     }
+
+    public void dealCard(Player player1){
+        Collections.shuffle(deck.cards);
+        Card cardForPlayer = deck.cards.remove(0);
+        player1.getHand().add(cardForPlayer);
+
+
+    }
 }
