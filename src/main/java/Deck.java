@@ -12,4 +12,14 @@ public class Deck {
         return cards.size();
     }
 
+    public void populateDeck() {
+        for (Suit eachSuit : Suit.values()){
+            for (Rank eachRank : Rank.values()){
+                Card card = new Card(eachSuit, eachRank);
+                cards.add(card);
+            }
+        }
+
+    }
+
 }
