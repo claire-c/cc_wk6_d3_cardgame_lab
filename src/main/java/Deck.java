@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
 
@@ -20,6 +21,14 @@ public class Deck {
             }
         }
 
+    }
+
+    public Card getCard(){
+        return cards.remove(0);
+    }
+
+    public void shuffleCards(){
+        Collections.shuffle(cards);
     }
 
 }
