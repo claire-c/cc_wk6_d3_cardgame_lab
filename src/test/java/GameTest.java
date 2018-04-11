@@ -28,5 +28,17 @@ public class GameTest {
         assertEquals("Joseph", game.getPlayer2().getName());
     }
 
+    @Test
+    public void gameHasDeckEmptyDeck(){
+        assertEquals(0, game.getDeck().countCards());
+    }
+
+    @Test
+    public void gameHasFullDeckAfterCreateDeck(){
+        game.createDeck();
+        assertEquals(52, game.getDeck().countCards());
+
+    }
+
 
 }
